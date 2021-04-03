@@ -7,12 +7,13 @@
   "author": "Lee Yuna<y.duck10002@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/graphql": "^14.5.0",
     "graphql-yoga": "^1.18.3",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
   },
   "scripts": {
-    "start": "tsc-watch --onSuccess \"node dist/index.js\" "
+    "start": "nodemon --exec ts-node src/index.ts"
   },
   "devDependencies": {
     "tsc-watch": "^4.2.9"
