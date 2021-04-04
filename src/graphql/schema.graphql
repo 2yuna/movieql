@@ -9,6 +9,6 @@ type Query {
   movie(id: Int!): Movie
 }
 
-type Mutaion {
+type Mutation {
   addMovie(name: String!, score: Int!): Movie!
 }
