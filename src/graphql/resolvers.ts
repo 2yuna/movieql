@@ -1,9 +1,10 @@
+import { collapseTextChangeRangesAcrossMultipleVersions } from "typescript";
 import { getById, people } from "./db";
 
 const resolvers = {
   Query: {
     people: () => people,
-    person: () => getById(),
+    person: (_, { id }) => getById(id),
   },
 };
 
